@@ -14,11 +14,11 @@ function init_index(){
 	    var account1 = true;
 	    $('#register_mail_group').removeClass('has-error');
 	    $('#register_mail_group').addClass('has-success');
-	    $('#message_mail').val('');
+	    $('#message_mail').val('Mail address valid');
 	  }else{
 	    $('#register_mail_group').addClass('has-error');
 	    $('#register_mail_group').removeClass('has-success');
-	    $('#message_mail').val('');
+	    $('#message_mail').val('Invalid mail address');
 	  }
 	  
 	  if($("#mdp").val() == $("#mdp_co").val() && regex_password($("#mdp").val())){
@@ -26,11 +26,11 @@ function init_index(){
 	    var account2 = true;
 	    $('#register_password_group').removeClass('has-error');
 	    $('#register_password_group').addClass('has-success');
-	    $('#message_password').val('');
+	    $('#message_password').val('Password valid');
 	  }else{
 	    $('#register_password_group').addClass('has-error');
 	    $('#register_password_group').removeClass('has-success');
-	    $('#message_password').val('');
+	    $('#message_password').val('Invalid password');
 	  }
 	  
 	  if(regex_login($("#login_register").val())){
@@ -38,11 +38,11 @@ function init_index(){
 	    var account3 = true;
 	    $('#register_login_group').removeClass('has-error');
 	    $('#register_login_group').addClass('has-success');
-	    $('#message_login').val('');
+	    $('#message_login').val('Login valid');
 	  }else{
 	    $('#register_login_group').addClass('has-error');
 	    $('#register_login_group').removeClass('has-success');
-	    $('#message_login').val('');
+	    $('#message_login').val('Invalid login');
 	  }
 	  
 	  if(account1 && account2 && account3){

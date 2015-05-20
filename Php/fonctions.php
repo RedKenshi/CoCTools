@@ -37,13 +37,11 @@ function verif_pseudo_libre($test){
   $pdo = create_pdo();
   $pseudos = $pdo->query("SELECT pseudo_user FROM t_users")->fetchAll(PDO::FETCH_ASSOC);
   $pseudo_libre = 'OUI';
-  echo "Demandé : " . $_POST['pseudo'];
   foreach ($pseudos as $pseudo){
-    echo "test de : " .$pseudo['pseudo_user'];
     if($pseudo['pseudo_user'] == $test){
       $pseudo_libre = 'NON';
     }
   }
-	//echo $pseudo_libre;
+	echo $pseudo_libre;
 }
 ?>
