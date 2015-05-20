@@ -60,8 +60,10 @@ function regex_login(login){
   }).done(function(data){
      if(data=='OUI' && lengthlog.test(login)){
        return true;
+       alert("C'est bon");
      }else{
        return false;
+       alert("C'est pas bon");
      }
   });
 }
