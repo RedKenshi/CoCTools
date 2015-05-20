@@ -37,9 +37,11 @@ function init_index(){
 	    var login = $("#login_register").val();
 	    var account3 = true;
 	    $('#register_login_group').removeClass('has-error');
+	    $('#register_password_group').addClass('has-success');
 	    $('#message_login').val('');
 	  }else{
 	    $('#register_login_group').addClass('has-error');
+	    $('#register_login_group').removeClass('has-success');
 	    $('#message_login').val('');
 	  }
 	  
