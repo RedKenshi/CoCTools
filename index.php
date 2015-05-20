@@ -53,6 +53,10 @@ if (isset($_POST['login_login']) && !empty($_POST['login_login']) && isset($_POS
                 </div>
             </div>
         </div>
+        
+        <button type="button" class="register_button btn btn-large btn-inverse btn-home" data-toggle="modal" data-target="#modal_register">
+            Merde
+         </button>
       
       <!-- Modal de connexion -->
         <form method='POST'>
