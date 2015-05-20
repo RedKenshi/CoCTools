@@ -14,7 +14,7 @@ function init_index(){
 	    var account1 = true;
 	    $('#register_mail_group').removeClass('has-error');
 	    $('#register_mail_group').addClass('has-success');
-	    $('#message_mail').val('Mail address valid');
+	    $('#message_mail').val('Valid mail address');
 	  }else{
 	    $('#register_mail_group').addClass('has-error');
 	    $('#register_mail_group').removeClass('has-success');
@@ -26,7 +26,7 @@ function init_index(){
 	    var account2 = true;
 	    $('#register_password_group').removeClass('has-error');
 	    $('#register_password_group').addClass('has-success');
-	    $('#message_password').val('Password valid');
+	    $('#message_password').val('Valid password');
 	  }else{
 	    $('#register_password_group').addClass('has-error');
 	    $('#register_password_group').removeClass('has-success');
@@ -38,7 +38,7 @@ function init_index(){
 	    var account3 = true;
 	    $('#register_login_group').removeClass('has-error');
 	    $('#register_login_group').addClass('has-success');
-	    $('#message_login').val('Login valid');
+	    $('#message_login').val('Valid login');
 	  }else{
 	    $('#register_login_group').addClass('has-error');
 	    $('#register_login_group').removeClass('has-success');
